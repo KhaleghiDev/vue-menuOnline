@@ -9,6 +9,7 @@ defineProps({
 
 <template>
   <div class="greetings">
+    <img alt="Vue logo" class="logo" src="@/assets/img/logo.png" width="125" height="125" />
     <h1 class="green">{{ msg }}</h1>
     <h3>
       شرکت طلوع سفیران نور ارائه دهنده خدمات ویزای تحصیلی در ایران

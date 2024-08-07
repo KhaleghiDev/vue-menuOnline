@@ -1,21 +1,27 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/img/logo.png" width="125" height="125" />
-
     <div class="wrapper">
       <HelloWorld msg="طلوع سفیران نور" />
 
       <nav>
-        <RouterLink class="btn-boder" to="/">صفحه اصلی </RouterLink>
-        <RouterLink class="btn-boder" to="/cv">رزومه موسس</RouterLink>
-        <RouterLink class="btn-boder" to="/about">درباره ما </RouterLink>
-        <RouterLink class="btn-boder" to="/contact">تماس با ما </RouterLink>
-        <RouterLink class="btn-boder" to="/lang">زبان</RouterLink>
+        <ul>
+          <li class="btn-boder"><RouterLink to="/">صفحه اصلی </RouterLink></li>
+          <li class="btn-boder">
+            <RouterLink to="/cv">رزومه موسس</RouterLink>
+          </li>
+          <li class="btn-boder">
+            <RouterLink to="/about">درباره ما </RouterLink>
+          </li>
+          <li class="btn-boder">
+            <RouterLink to="/contact">تماس با ما </RouterLink>
+          </li>
+          <li class="btn-boder"><RouterLink to="/lang">زبان</RouterLink></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -40,6 +46,12 @@ nav {
   text-align: center;
   margin-top: 2rem;
 }
+nav ul{
+  text-align: center;
+}
+nav ul li {
+  margin: 20px 0;
+}
 
 nav a.router-link-exact-active {
   color: var(--color-text);
@@ -52,6 +64,8 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
+  width: 100%;
+  
   border-left: 1px solid var(--color-border);
 }
 
