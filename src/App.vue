@@ -5,14 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/img/logo.png" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="طلوع سفیران نور" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink class="btn-boder" to="/">صفحه اصلی </RouterLink>
+        <RouterLink class="btn-boder" to="/cv">رزومه موسس</RouterLink>
+        <RouterLink class="btn-boder" to="/about">درباره ما </RouterLink>
+        <RouterLink class="btn-boder" to="/contact">تماس با ما </RouterLink>
+        <RouterLink class="btn-boder" to="/lang">زبان</RouterLink>
       </nav>
     </div>
   </header>

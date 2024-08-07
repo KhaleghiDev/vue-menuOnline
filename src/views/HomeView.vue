@@ -7,3 +7,12 @@ import TheWelcome from '../components/TheWelcome.vue'
     <TheWelcome />
   </main>
 </template>
+<style>
+@media (min-width: 1024px) {
+  main {
+    min-height: 100vh;
+   
+    align-items: center;
+  }
+}
+</style>
