@@ -11,12 +11,12 @@ import TheWelcome from '../components/TheWelcome.vue'
 @media (min-width: 1024px) {
   main {
     min-height: 100vh;
-    align-items: flex-end;
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
 }
 }
 </style>
