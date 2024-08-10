@@ -12,6 +12,9 @@ import HelloWorld from "./components/HelloWorld.vue";
         <ul>
           <li class="btn-boder"><RouterLink to="/">صفحه اصلی </RouterLink></li>
           <li class="btn-boder">
+            <RouterLink to="/branches">شعب ما</RouterLink>
+          </li>
+          <li class="btn-boder">
             <RouterLink to="/cv">رزومه موسس</RouterLink>
           </li>
           <li class="btn-boder">
@@ -99,4 +102,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+
 </style>
