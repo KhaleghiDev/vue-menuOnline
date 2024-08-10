@@ -1,6 +1,11 @@
 <template>
   <div class="lang">
-    <h1>This is an about page</h1>
+  <ul class="lang">
+    <li class="lang-item"><a href="/fa">فارسی</a></li>
+    <li class="lang-item"><a href="/lang">English</a></li>
+    <li class="lang-item"><a href="/lang">عربی</a></li>
+    <li class="lang-item"><a href="/lang"></a></li>
+  </ul>
   </div>
 </template>
 

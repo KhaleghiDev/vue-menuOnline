@@ -58,5 +58,14 @@
       justify-content: center;
     
   }
+  ul.cv_menu {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  align-content: center;
+}
+ul.cv_menu li{
+  margin: 10px;
+}
 }
 </style>
