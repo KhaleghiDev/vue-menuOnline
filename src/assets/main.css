@@ -35,15 +35,17 @@ a,
     padding: 0 2rem;
   }
 }
+
 @font-face {
   font-family: Lalezar;
   font-style: normal;
   font-weight: 300;
-  src: url("./../fonts/Lalezar.otf");
-  src: url("./../fonts/Lalezar.woff") format("woff"),
-    url("./../fonts/Lalezar.ttf") format("ttf"),
-    url("./../fonts/Lalezar.woff2") format("woff2");
+  src: url("@/assets/fonts/Lalezar.otf");
+  src: url("@/assets/fonts/Lalezar.woff") format("woff"),
+    url("@/assets/fonts/Lalezar.ttf") format("ttf"),
+    url("@/assets/fonts/Lalezar.woff2") format("woff2");
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -215,8 +217,8 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   max-width: 100%;
 }
 
@@ -247,9 +249,12 @@ audio:not([controls]) {
  */
 
 html {
-  font-size: 100%; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /**
@@ -275,8 +280,10 @@ a:hover {
  */
 
 img {
-  border: 0; /* 1 */
-  -ms-interpolation-mode: bicubic; /* 2 */
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
 }
 
 /**
@@ -312,27 +319,29 @@ fieldset {
  */
 
 legend {
-  border: 0; /* 1 */
+  border: 0;
+  /* 1 */
   padding: 0;
-  white-space: normal; /* 2 */
-  *margin-left: -7px; /* 3 */
+  white-space: normal;
+  /* 2 */
+  margin-left: -7px;
+  /* 3 */
 }
 
-/**
- * 1. Correct font size not being inherited in all browsers.
- * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
- *    and Chrome.
- * 3. Improve appearance and consistency in all browsers.
- */
+
 
 button,
 input,
 select,
 textarea {
-  font-size: 100%; /* 1 */
-  margin: 0; /* 2 */
-  vertical-align: baseline; /* 3 */
-  *vertical-align: middle; /* 3 */
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  vertical-align: middle;
+  /* 3 */
 }
 
 /**
@@ -368,12 +377,16 @@ select {
  */
 
 button,
-html input[type="button"], /* 1 */
+html input[type="button"],
+/* 1 */
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
-  *overflow: visible; /* 4 */
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  overflow: visible;
+  /* 4 */
 }
 
 /**
@@ -394,10 +407,14 @@ html input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-  *height: 13px; /* 3 */
-  *width: 13px; /* 3 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  height: 13px;
+  /* 3 */
+  width: 13px;
+  /* 3 */
 }
 
 /**
@@ -407,9 +424,11 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: textfield;
+  /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
   box-sizing: content-box;
 }
 
@@ -439,8 +458,10 @@ input::-moz-focus-inner {
  */
 
 textarea {
-  overflow: auto; /* 1 */
-  vertical-align: top; /* 2 */
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
 }
 
 /**
@@ -490,6 +511,7 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+
 /* start code */
 
 body {
@@ -498,22 +520,27 @@ body {
   font-family: Lalezar;
   font-size: 16px;
 }
+
 a {
   color: white !important;
   text-decoration: none !important;
 }
+
 header img {
   position: absolute;
   left: 72px;
   right: 144px;
   top: 127px;
 }
+
 .m-center {
   margin: 0 auto;
 }
+
 .text-center {
   text-align: center;
 }
+
 .header {
   width: 100%;
   height: 26vh;
@@ -521,6 +548,7 @@ header img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 footer {
   background-image: url("/src/assets/img/fooer.png");
   background-size: cover;
@@ -532,10 +560,12 @@ footer {
   width: 100%;
   z-index: -1000000;
 }
+
 main.main {
   position: relative;
   top: -15vh;
 }
+
 ul.menu {
   width: 100%;
   display: flex;
@@ -545,6 +575,7 @@ ul.menu {
   justify-content: center;
   align-items: center;
 }
+
 .box {
   position: absolute;
   top: 27vh;
@@ -569,6 +600,7 @@ ul.menu {
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   display: flex;
   flex-wrap: nowrap;
@@ -580,15 +612,18 @@ ul.menu {
   text-align: center;
   margin: 28px auto 0;
 }
+
 .mb-1 {
   margin-bottom: 1rem;
 }
+
 .circle {
   background: url("./../img/back.png");
   width: 100px;
   height: 100px;
   z-index: -2;
 }
+
 .btn-link {
   color: #fff !important;
   text-decoration: none;
@@ -596,13 +631,16 @@ ul.menu {
   border: none;
   font-family: "Lalezar";
 }
+
 .btn-boder:first-child {
   margin-top: 10px;
 }
+
 .btn-boder:nth-child(odd) {
   border: 2px solid #ffa200;
   border-radius: 5px;
 }
+
 .btn-lang {
   border: 2px solid #ffa200;
   background-color: unset;
@@ -615,6 +653,7 @@ ul.menu {
   border: 2px solid #fff;
   border-radius: 5px;
 }
+
 .menu ul li {
   margin: 7px 5px;
 }
@@ -627,12 +666,14 @@ img.profile {
   border: 1px solid #000;
   border-radius: 50%;
 }
+
 .box-address {
   border: 1px solid #000;
   border-radius: 5px;
   margin: 5px 0 0;
   padding: 10px 3px;
 }
+
 .d-flex {
   display: flex;
 }
@@ -640,35 +681,32 @@ img.profile {
 .flex-colemn {
   flex-direction: column;
 }
+
 .circle {
   width: 100px;
   height: 100px;
-  background: linear-gradient(
-    -45deg,
-    rgb(255, 255, 255) 25%,
-    #025a82 0%,
-    #025a82 50%,
-    rgb(255, 255, 255) 0%,
-    rgb(255, 255, 255) 75%,
-    #025a82 0
-  );
+  background: linear-gradient(-45deg,
+      rgb(255, 255, 255) 25%,
+      #025a82 0%,
+      #025a82 50%,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 75%,
+      #025a82 0);
   background-size: 30px 30px;
   border-radius: 50%;
   position: absolute;
   top: 0;
   right: -33px;
 }
+
 .circle2 {
   width: 100px;
   height: 100px;
   --d: 4px;
 
-  background: radial-gradient(
-      circle at var(--d) var(--d),
+  background: radial-gradient(circle at var(--d) var(--d),
       #fff calc(var(--d) - 1px),
-      #0000 var(--d)
-    )
-    0 0 / 50px 50px;
+      #0000 var(--d)) 0 0 / 50px 50px;
   background-size: 30px 30px;
   position: absolute;
   bottom: 0;
@@ -680,20 +718,28 @@ header {
   place-items: center;
   padding-left: calc(var(--section-gap) / 2);
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1023px) {
   header {
     padding-right: unset !important;
   }
+
+  header img {
+    position: unset;
+    left: unset;
+    right: unset;
+    top: unset;
+  }
+
   .wrapper {
     width: 100%;
   }
+
   header {
     padding: 0;
   }
+
   .greetings h1 {
     margin-top: 15vh;
-  }
-  .logo {
-    margin: -8rem auto 0;
   }
 }
