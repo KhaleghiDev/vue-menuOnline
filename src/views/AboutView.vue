@@ -1,3 +1,6 @@
+<script>
+import { RouterLink, RouterView } from "vue-router";
+</script>
 <template>
   <div class="about">
     <h1>درباره ما</h1>
@@ -10,9 +13,26 @@
       حال حاضر در بیش از 30 دانشگاه معتبر جهان ارائه خدمات و پذیرش دانشجو داریم.
     </p>
   </div>
+  <RouterLink to="/branches">
+      <span class="btn-cv">
+        رزومه موسس
+      </span>
+    </RouterLink>
 </template>
 
 <style>
+@media (max-width: 1023px) {
+.btn-cv{
+  background: hsla(160, 100%, 37%, 1);
+    padding: 3px 11px;
+    border-radius: 10px;
+}
+a:hover{
+  background: hsla(160, 100%, 37%, 1);
+  box-shadow: #ffa200 0px 4px 12px;
+  padding: 5px 8px;
+}
+}
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

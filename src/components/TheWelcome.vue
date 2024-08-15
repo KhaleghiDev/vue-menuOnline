@@ -48,3 +48,8 @@ import SupportIcon from "./icons/IconSupport.vue";
     <p>ارائه دهنده خدمات بورسیه تحصیلی</p>
   </WelcomeItem>
 </template>
+<style>
+i{
+  color: #ffa200 !important;
+}
+</style>
