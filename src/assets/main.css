@@ -40,12 +40,21 @@ a,
   font-family: Lalezar;
   font-style: normal;
   font-weight: 300;
-  src: url("@/assets/fonts/Lalezar.otf");
-  src: url("@/assets/fonts/Lalezar.woff") format("woff"),
-    url("@/assets/fonts/Lalezar.ttf") format("ttf"),
-    url("@/assets/fonts/Lalezar.woff2") format("woff2");
+  src: url("@/assets/fonts/Lalezar/Lalezar.otf");
+  src: url("@/assets/fonts/Lalezar/Lalezar.woff") format("woff"),
+    url("@/assets/fonts/Lalezar/Lalezar.ttf") format("ttf"),
+    url("@/assets/fonts/Lalezar/Lalezar.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: byekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url("@/assets/fonts/BYekan/BYekan.eot");
+  src: url("@/assets/fonts/BYekan/BYekan.woff") format("woff"),
+    url("@/assets/fonts/BYekan/BYekan.ttf") format("ttf"),
+    url("@/assets/fonts/BYekan/BYekan.woff2") format("woff2");
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -480,7 +489,10 @@ select,
 textarea {
   color: #222;
 }
-
+p {
+  font-family: byekan;
+  line-height: 1.7;
+}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -524,6 +536,7 @@ body {
 a {
   color: white !important;
   text-decoration: none !important;
+  line-height: 1.7;
 }
 
 header img {
@@ -558,7 +571,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: -1000000;
+
 }
 
 main.main {
@@ -621,7 +634,6 @@ ul.menu {
   background: url("./../img/back.png");
   width: 100px;
   height: 100px;
-  z-index: -2;
 }
 
 .btn-link {
@@ -738,8 +750,18 @@ header {
   header {
     padding: 0;
   }
-
-  .greetings h1 {
-    margin-top: 15vh;
+  
+  footer{
+    background: unset;
+    background-color: #fff;
+    height: 5vh;
   }
+  footer .footer_list {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #000;
+}
 }

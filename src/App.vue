@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import FooterMobile from "@/components/footerMobile.vue";
 </script>
 
 <template>
@@ -28,9 +29,11 @@ import HelloWorld from "./components/HelloWorld.vue";
       </nav>
     </div>
   </header>
-
+  <FooterMobile></FooterMobile>
   <RouterView />
+  
 </template>
+
 
 <style scoped>
 header {
@@ -76,6 +79,12 @@ nav a:first-of-type {
   border: 0;
 }
 
+@media (max-width: 1023px) {
+  nav{
+    display: none !important;
+}
+
+}
 @media (min-width: 1024px) {
   header {
     display: flex;
